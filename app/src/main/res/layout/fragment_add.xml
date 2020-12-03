@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundandroid"
+    android:padding="24dp"
+    tools:context=".fragments.add.AddFragment">
+
+
+    <EditText
+        android:id="@+id/addFirstName_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/textlines"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#9AFFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <EditText
+        android:id="@+id/addLastName_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/textlines"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:textColorHint="#99FFFFFF"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/addFirstName_et"
+        tools:layout_editor_absoluteX="100dp" />
+
+    <EditText
+        android:id="@+id/addAdge_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/textlines"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="number"
+        android:textColor="@android:color/white"
+        android:textColorHint="#99FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/addLastName_et"
+        tools:layout_editor_absoluteX="100dp" />
+
+    <EditText
+        android:id="@+id/addPosition_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/textlines"
+        android:ems="10"
+        android:hint="Position in company"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="#99FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/addAdge_et"
+        tools:layout_editor_absoluteX="24dp" />
+
+
+    <TextView
+        android:id="@+id/data_picker"
+        android:layout_width="174dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Date of employment"
+        android:background="@color/white"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/teal_700"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addPosition_et" />
+
+    <TextView
+        android:id="@+id/add_button"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="Add"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/teal_700"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/data_picker"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/date_of_employment"
+        android:layout_width="168dp"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_height="62dp"
+        android:background="@drawable/textlines"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/add_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/data_picker"
+        app:layout_constraintTop_toBottomOf="@+id/addPosition_et" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titletextlines"
+        android:text="Adding new employee"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/addFirstName_et"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backgroundandroid"
+    tools:context=".fragments.update.UpdateFragment">
+
+    <EditText
+        android:id="@+id/updateFirstName_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#7E7C7C"
+        android:ems="10"
+        android:background="@drawable/textlines"
+        android:textSize="25sp"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="100dp" />
+
+    <EditText
+        android:id="@+id/updateLastName_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#7E7C7C"
+        android:background="@drawable/textlines"
+        android:ems="10"
+        android:textSize="25sp"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/updateFirstName_et"
+        tools:layout_editor_absoluteX="100dp" />
+
+    <EditText
+        android:id="@+id/updateAge_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#7E7C7C"
+        android:background="@drawable/textlines"
+        android:ems="10"
+        android:hint="Age"
+        android:textSize="25sp"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/updateLastName_et"
+        tools:layout_editor_absoluteX="100dp" />
+    <EditText
+        android:id="@+id/update_Position_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/textlines"
+        android:ems="10"
+        android:textColor="#FFFFFF"
+        android:hint="Position in company"
+        android:inputType="textPersonName"
+        android:textColorHint="#7E7C7C"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/updateAge_et"
+        tools:layout_editor_absoluteX="24dp" />
+
+
+    <TextView
+        android:id="@+id/update_data_picker"
+        android:layout_width="174dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="Date of employment"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_Position_et" />
+
+
+    <TextView
+        android:id="@+id/update_button"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="Update"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/update_data_picker"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/update_date_of_employment"
+        android:layout_width="168dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_height="62dp"
+        android:background="@drawable/textlines"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/update_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/update_data_picker"
+        app:layout_constraintTop_toBottomOf="@+id/update_Position_et" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titletextlines"
+        android:text="Update employee"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/updateFirstName_et"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
