@@ -33,6 +33,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        dataBinding true
+    }
 }
 
 dependencies {
@@ -49,6 +52,7 @@ dependencies {
     // optional - Test helpers
     apply plugin: 'com.android.application'
     apply plugin: 'kotlin-android'
+    implementation 'com.github.ajalt:timberkt:1.5.1'
     apply plugin: 'kotlin-android-extensions'
     implementation "android.arch.navigation:navigation-fragment-ktx:1.0.0"
     testImplementation "androidx.room:room-testing:$room_version"

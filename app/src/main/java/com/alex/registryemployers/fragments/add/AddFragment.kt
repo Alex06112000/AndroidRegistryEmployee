@@ -13,6 +13,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.alex.registryemployers.R
@@ -21,11 +22,12 @@ import com.alex.registryemployers.viewmodel.EmployerViewModel
 import kotlinx.android.synthetic.main.fragment_add.*
 import kotlinx.android.synthetic.main.fragment_add.view.*
 import kotlinx.android.synthetic.main.fragment_update.*
+import timber.log.Timber
 import java.util.*
 
-   class AddFragment : Fragment() {
+   class AddFragment : Fragment(), LifecycleObserver {
 
-    private lateinit var mEmployerViewModel: EmployerViewModel
+   private lateinit var mEmployerViewModel: EmployerViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -82,4 +84,12 @@ import java.util.*
            Toast.makeText(requireContext(), "Please fill out all fields.", Toast.LENGTH_LONG).show()
        }
    }
+
+   //** lifecycle methods
+
+   override fun onSaveInstanceState(outState: Bundle) {
+       super.onSaveInstanceState(outState)
+       Timber.i("onSaveInstanceState Called")
+   }
+
 }
